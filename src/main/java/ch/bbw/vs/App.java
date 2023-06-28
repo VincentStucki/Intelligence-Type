@@ -205,7 +205,7 @@ public class App
 
             if(entry.getValue() == temp){
                 rank--;
-                System.out.println("Rang " + rank + ": " + entry.getKey() + " - Wert: " + entry.getValue() + "%");
+                System.out.println("Rang " + rank + ": " + entry.getKey() + " - Wert: " + entry.getValue() + "%" + "\n--\n");
                 rank++;
             }
             else{
