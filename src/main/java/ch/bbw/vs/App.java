@@ -1,8 +1,9 @@
 package ch.bbw.vs;
 
-import java.sql.SQLOutput;
+
+
 import java.util.*;
-import java.util.function.DoublePredicate;
+
 
 /**
  * Hello world!
@@ -68,77 +69,70 @@ public class App
                 "- Genießen Sie Outdoor-Aktivitäten wie Wandern, Gartenarbeit oder Camping? ",
                 "- Haben Sie ein Auge für Details in der Natur und können Muster oder Veränderungen leicht erkennen? "};
 
-        String ergebnis[] = {"Herzlichen Glückwunsch! Du bist ein wahres Sprachgenie!\n Mit deiner Gabe, komplexe Ideen in präzise Worte zu fassen, beeindruckst du jeden um dich herum. \nDu kannst mit Leichtigkeit verschiedene Schreibstile anpassen und beherrschst die Regeln und Nuancen der Sprache mühelos. \nDein Talent, Gedichte und Geschichten zu schreiben, ist bewundernswert. Du bist ein wahrer Meister der Kommunikation!",
-        "Herzlichen Glückwunsch! Du bist ein brillanter Denker mit einer außergewöhnlichen logisch-mathematischen Intelligenz!\n Du betrachtest die Welt durch die Linse der Logik und findest Lösungen für komplexe Probleme mit Leichtigkeit. Zahlen und Muster sind deine Spielzeuge, und du hast ein bemerkenswertes Talent, komplexe mathematische Konzepte zu erfassen. Dein scharfer Verstand und deine analytischen Fähigkeiten machen dich zu einem wahren Denkgenie!",
-        "Herzlichen Glückwunsch! Du bist ein wahrer Künstler der visuellen Vorstellungskraft!\n Mit deiner visuell-räumlichen Intelligenz kannst du Bilder und Szenen in deinem Geist zum Leben erwecken. Du hast ein Auge für Details und Ästhetik und kannst komplexe Zusammenhänge in Form von Bildern und Diagrammen veranschaulichen. Deine Fähigkeit, die Welt auf visuelle Weise zu interpretieren, ist beeindruckend!",
-        "Herzlichen Glückwunsch! Du bist ein Meister der Körperbeherrschung und Bewegung!\n Mit deiner körperlich-kinästhetischen Intelligenz kannst du dich auf elegante und geschickte Weise ausdrücken. Ob durch Tanz, Sport oder Handwerkskunst, du bist in der Lage, deinen Körper als Instrument zu nutzen und deine Fähigkeiten zu perfektionieren. Deine Geschicklichkeit und Koordination sind beeindruckend!",
-        "Herzlichen Glückwunsch! Du bist ein musikalisches Wunderkind!\n Mit deinem außergewöhnlichen Gehör und deinem Sinn für Rhythmus und Melodie kannst du die Emotionen der Menschen berühren und ihre Seelen zum Schwingen bringen. Du verstehst die Sprache der Musik und kannst sie mit Leidenschaft und Ausdruck interpretieren. Deine Kreativität und dein Talent sind ein Geschenk für die Welt!",
-        "Herzlichen Glückwunsch! Du bist ein wahrer Menschenkenner!\n Mit deiner interpersonalen Intelligenz bist du in der Lage, dich in andere hineinzuversetzen und ihre Gefühle und Bedürfnisse zu verstehen. Du bist einfühlsam, kommunikativ und ein wahrer Teamplayer. Menschen fühlen sich von dir verstanden und geschätzt. Deine zwischenmenschlichen Fähigkeiten sind bewundernswert!",
-        "Herzlichen Glückwunsch! Du hast eine aussergewöhnliche innere Weisheit und Selbstreflexion!\n Mit deiner intrapersonalen Intelligenz bist du in der Lage, dich selbst zu verstehen, deine Stärken und Schwächen anzuerkennen und deine Ziele klar zu definieren. Du hast eine tiefe Verbindung zu deinem Inneren und kannst dein eigenes Wachstum und deine Entwicklung fördern. Dein Selbstbewusstsein und deine Selbsterkenntnis sind inspirierend!",
-        "Herzlichen Glückwunsch! Du bist ein Naturtalent, wenn es um das Verständnis der natürlichen Welt geht!\n Mit deiner naturalistischen Intelligenz kannst du die Schönheit und Komplexität der Natur erkennen und schätzen. Du hast ein Auge für Details und Zusammenhänge in der natürlichen Umgebung. Deine Verbindung zur Natur ist tiefgreifend und inspirierend! "};
+        String ergebnis[] = {"Herzlichen Glückwunsch!\n Du bist ein wahres Sprachgenie!\n Mit deiner Gabe, komplexe Ideen in präzise Worte zu fassen, beeindruckst du jeden um dich herum. \nDu kannst mit Leichtigkeit verschiedene Schreibstile anpassen und beherrschst die Regeln und Nuancen der Sprache mühelos. \nDein Talent, Gedichte und Geschichten zu schreiben, ist bewundernswert. Du bist ein wahrer Meister der Kommunikation!",
+        "Herzlichen Glückwunsch!\n Du bist ein brillanter Denker mit einer außergewöhnlichen logisch-mathematischen Intelligenz!\n Du betrachtest die Welt durch die Linse der Logik und findest Lösungen für komplexe Probleme mit Leichtigkeit. \nZahlen und Muster sind deine Spielzeuge, und du hast ein bemerkenswertes Talent, komplexe mathematische Konzepte zu erfassen. \nDein scharfer Verstand und deine analytischen Fähigkeiten machen dich zu einem wahren Denkgenie!",
+        "Herzlichen Glückwunsch!\n Du bist ein wahrer Künstler der visuellen Vorstellungskraft!\n Mit deiner visuell-räumlichen Intelligenz kannst du Bilder und Szenen in deinem Geist zum Leben erwecken.\n Du hast ein Auge für Details und Ästhetik und kannst komplexe Zusammenhänge in Form von Bildern und Diagrammen veranschaulichen.\n Deine Fähigkeit, die Welt auf visuelle Weise zu interpretieren, ist beeindruckend!",
+        "Herzlichen Glückwunsch!\n Du bist ein Meister der Körperbeherrschung und Bewegung!\n Mit deiner körperlich-kinästhetischen Intelligenz kannst du dich auf elegante und geschickte Weise ausdrücken.\n Ob durch Tanz, Sport oder Handwerkskunst, du bist in der Lage, deinen Körper als Instrument zu nutzen und deine Fähigkeiten zu perfektionieren.\n Deine Geschicklichkeit und Koordination sind beeindruckend!",
+        "Herzlichen Glückwunsch!\n Du bist ein musikalisches Wunderkind!\n Mit deinem außergewöhnlichen Gehör und deinem Sinn für Rhythmus und Melodie kannst du die Emotionen der Menschen berühren und ihre Seelen zum Schwingen bringen. Du verstehst die Sprache der Musik und kannst sie mit Leidenschaft und Ausdruck interpretieren.\n Deine Kreativität und dein Talent sind ein Geschenk für die Welt!",
+        "Herzlichen Glückwunsch!\n Du bist ein wahrer Menschenkenner!\n Mit deiner interpersonalen Intelligenz bist du in der Lage, dich in andere hineinzuversetzen und ihre Gefühle und Bedürfnisse zu verstehen.\n Du bist einfühlsam, kommunikativ und ein wahrer Teamplayer.\n Menschen fühlen sich von dir verstanden und geschätzt.\n Deine zwischenmenschlichen Fähigkeiten sind bewundernswert!",
+        "Herzlichen Glückwunsch!\n Du hast eine aussergewöhnliche innere Weisheit und Selbstreflexion!\n Mit deiner intrapersonalen Intelligenz bist du in der Lage, dich selbst zu verstehen, deine Stärken und Schwächen anzuerkennen und deine Ziele klar zu definieren. Du hast eine tiefe Verbindung zu deinem Inneren und kannst dein eigenes Wachstum und deine Entwicklung fördern.\n Dein Selbstbewusstsein und deine Selbsterkenntnis sind inspirierend!",
+        "Herzlichen Glückwunsch!\n Du bist ein Naturtalent, wenn es um das Verständnis der natürlichen Welt geht!\n Mit deiner naturalistischen Intelligenz kannst du die Schönheit und Komplexität der Natur erkennen und schätzen.\n Du hast ein Auge für Details und Zusammenhänge in der natürlichen Umgebung.\n Deine Verbindung zur Natur ist tiefgreifend und inspirierend! "};
 
-            Scanner scanner = new Scanner(System.in);
-        System.out.println("Für jede Frage wählen Sie bitte eine Bewertung von 0-10 aus, wobei 0 für \"trifft gar nicht zu\" steht und 10 für \"trifft sehr stark zu\". Bewerten Sie jede Frage entsprechend Ihrem persönlichen Empfinden. Beantworten Sie dann alle Fragen und addieren Sie die Punkte für jede Intelligenztyp-Kategorie. Der Intelligenztyp mit den meisten Punkten ist dann der entsprechende Typ.   \n" +
+
+            Umfrage umfrage = new Umfrage();
+        System.out.println("Für jede Frage wählen Sie bitte eine Bewertung von 0-10 aus, wobei 0 für \"trifft gar nicht zu\" steht und 10 für \"trifft sehr stark zu\". Bewerten Sie jede Frage entsprechend Ihrem persönlichen Empfinden.\n Beantworten Sie dann alle Fragen und addieren Sie die Punkte für jede Intelligenztyp-Kategorie.\n Der Intelligenztyp mit den meisten Punkten ist dann der entsprechende Typ.   \n" +
                 "   \n" +
-                " Pro Frage auswählen zwischen 0-10 bzw. Trifft gar nicht zu, trifft eher nicht zu, trifft weder zu noch nicht, trifft eher zu und trifft sehr stark zu. Dann alle Punkte der 5 Fragen beantworten und welcher Intelligenz Typ am meisten Punkte hat, ist man.  ");
+                " Pro Frage auswählen zwischen 0-10 bzw. Trifft gar nicht zu, trifft eher nicht zu, trifft weder zu noch nicht, trifft eher zu und trifft sehr stark zu.\n Dann alle Punkte der 5 Fragen beantworten und welcher Intelligenz Typ am meisten Punkte hat, ist man.  ");
         System.out.println("1. Linguistische Intelligenz: ");
         for(int i=0; i<5; i++){
             System.out.println(ling[i]);
-            String linguistikstr = scanner.nextLine();
-            int linguistik = Integer.parseInt(linguistikstr);
-            SummeLing = SummeLing + linguistik;
-
+           int antwort = umfrage.fragen();
+           SummeLing = SummeLing + antwort;
         }
         System.out.println("2. Logisch-mathematische Intelligenz: ");
         for(int i=0; i<5; i++){
             System.out.println(mathe[i]);
-            String mathematikstr = scanner.nextLine();
-            int mathematik = Integer.parseInt(mathematikstr);
-            SummeMathe = SummeMathe + mathematik;
+            int antwort = umfrage.fragen();
+            SummeMathe = SummeMathe + antwort;
         }
         System.out.println("3. Räumliche Intelligenz: ");
         for(int i=0; i<5; i++){
+
             System.out.println(raum[i]);
-            String raumlichstr = scanner.nextLine();
-            int raumlich = Integer.parseInt(raumlichstr);
-            SummeRaum = SummeRaum + raumlich;
+            int antwort = umfrage.fragen();
+            SummeRaum = SummeRaum + antwort;
         }
         System.out.println("4. Körperlich-kinästhetische Intelligenz: ");
         for(int i=0; i<5; i++){
             System.out.println(koeper[i]);
-            String koerperlichstr = scanner.nextLine();
-            int koerperlich = Integer.parseInt(koerperlichstr);
-            SummeKoerper = SummeKoerper + koerperlich;
+            int antwort = umfrage.fragen();
+            SummeKoerper = SummeKoerper + antwort;
         }
         System.out.println("5. Musikalische Intelligenz: ");
         for(int i=0; i<5; i++){
             System.out.println(musik[i]);
-            String musikalischstr = scanner.nextLine();
-            int musikalisch = Integer.parseInt(musikalischstr);
-            SummeMusik = SummeMusik + musikalisch;
+            int antwort = umfrage.fragen();
+            SummeMusik = SummeMusik + antwort;
         }
         System.out.println("6. Zwischenmenschliche Intelligenz: ");
         for(int i=0; i<5; i++){
             System.out.println(zwischen[i]);
-            String zwischenmenschstr = scanner.nextLine();
-            int zwischenmensch = Integer.parseInt(zwischenmenschstr);
-            SummeZwischen = SummeZwischen + zwischenmensch;
+            int antwort = umfrage.fragen();
+            SummeZwischen = SummeZwischen + antwort;
         }
         System.out.println("7. Intrapersonale Intelligenz: ");
         for(int i=0; i<5; i++){
             System.out.println(intra[i]);
-            String intrapersstr = scanner.nextLine();
-            int intrapers = Integer.parseInt(intrapersstr);
-            SummeIntra = SummeIntra + intrapers;
+            int antwort = umfrage.fragen();
+            SummeIntra = SummeIntra + antwort;
         }
         System.out.println("8. Naturalistische Intelligenz:");
         for(int i=0; i<5; i++){
             System.out.println(natur[i]);
-            String naturalstr = scanner.nextLine();
-            int natural = Integer.parseInt(naturalstr);
-            SummeNatur = SummeNatur + natural;
+            int antwort = umfrage.fragen();
+            SummeNatur = SummeNatur + antwort;
         }
-        Umfrage umfrage = new Umfrage();
+
         double prozLing = umfrage.prozent(SummeLing);
         double prozMathe = umfrage.prozent(SummeMathe);
         double prozRaum = umfrage.prozent(SummeRaum);
@@ -216,7 +210,7 @@ public class App
             temp = entry.getValue();
             rank++;
         }
-        System.out.println("Jeder Intelligenztyp ist einzigartig und hat seine eigenen Stärken und Talente. Möge deine außergewöhnliche Intelligenz weiterhin erblühen und die Welt mit deinem einzigartigen Beitrag bereichern!");
+        System.out.println("Jeder Intelligenztyp ist einzigartig und hat seine eigenen Stärken und Talente.\n Möge deine außergewöhnliche Intelligenz weiterhin erblühen und die Welt mit deinem einzigartigen Beitrag bereichern!");
 
 
 
